@@ -15,19 +15,37 @@
   </style>
 </head>
 <body>
+  <main>
+    <form>
+      <div class="form__field">
+        <label for="day">Day</label>
+        <input id="day" type="number" placeholder="DD" />
+      </div>
+    
+      <div class="form__field">
+        <label for="month">Month</label>
+        <input id="month" type="number" placeholder="MM" />
+      </div>
 
-  Day
-  DD
+      <div class="form__field">
+        <label for="year">Year</label>
+        <input id="year" type="number" placeholder="YYYY" />
+      </div>
+    </form>
 
-  Month
-  MM
+    <div class="separator"></div>
 
-  Year
-  YYYY
+    <button>
+      Calculate
+    </button>
 
-  -- years
-  -- months
-  -- days
+    <!-- Results section -->
+    <section class="results">
+      <span id="years" class="results__number">--</span> years
+      <span id="months" class="results__number">--</span> months
+      <span id="days" class="results__number">--</span> days
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
