@@ -28,6 +28,7 @@ body {
     display: grid;
     place-content: center;
     min-height: 100vmin;
+    margin: 1rem;
 }
 
 main {
@@ -35,12 +36,34 @@ main {
 }
 
 form {
-    label {
-        color: var(--clr-neutral-400);
-    }
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield; /* for Chrome, Safari */
+    -moz-appearance: textfield;    /* for Firefox */
+    appearance: textfield;
+
+    max-width: 4rem;
+    border-radius: 5px;
+    border: 1px solid var(--clr-neutral-300);
+    padding: 0.5rem;
+}
+
+input[type="number"]:is(:focus, :hover) {
+    outline: none;
+    border: 1px solid var(--clr-primary-400);
+}
+
+label {
+    color: var(--clr-neutral-400);
 }
 
 .results {
+    display: grid;
+
     span {
         color: var(--clr-primary-400);
     }
