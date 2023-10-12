@@ -68,6 +68,11 @@ label {
 
 .results {
     display: grid;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: var(--fw-bolder);
+    padding-top: 3rem;
+    line-height: 1.2;
 
     span {
         color: var(--clr-primary-400);
