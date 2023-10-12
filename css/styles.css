@@ -58,6 +58,9 @@ input[type="number"]:is(:focus, :hover) {
 }
 
 label {
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    font-size: 0.5rem;
     color: var(--clr-neutral-400);
 }
 
