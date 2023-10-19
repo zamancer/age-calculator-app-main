@@ -78,3 +78,47 @@ label {
         color: var(--clr-primary-400);
     }
 }
+
+/* Styles for the separator section */
+
+.separator-section {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+button {
+    background-color: var(--clr-primary-400);
+    border-radius: 50%;
+    border: none;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add hover styles for button */
+button:hover {
+    cursor: pointer;
+    background-color: var(--clr-neutral-0);
+}
+
+@media (min-width: 769px) {
+    button {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.separator {
+    border-bottom: 1px solid var(--clr-neutral-300);
+    width: 100%;
+    margin-bottom: 20px;
+    position: absolute;
+    /* adjust top value so that it's positioned correctly */
+    top: 50%;
+    z-index: 0;
+}
