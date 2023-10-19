@@ -24,25 +24,30 @@
   
   <!-- Add custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Add custom JavaScript -->
+  <script defer src="js/app.js"></script>
 </head>
 <body>
   <main>
-    <form>
-      <div class="form__field">
-        <label for="day">Day</label>
-        <input id="day" type="number" placeholder="DD" />
-      </div>
+    <form id="calculator-form">
+      <section class="form-controls">
+        <div class="form__field">
+          <label for="day">Day</label>
+          <input name="day" type="number" placeholder="DD" min="1" max="31" required />
+        </div>
+      
+        <div class="form__field">
+          <label for="month">Month</label>
+          <input name="month" type="number" placeholder="MM" min="1" max="12" required />
+        </div>
+  
+        <div class="form__field">
+          <label for="year">Year</label>
+          <input name="year" type="number" placeholder="YYYY" min="1800" max="2100" required />
+        </div>
+      </section>
     
-      <div class="form__field">
-        <label for="month">Month</label>
-        <input id="month" type="number" placeholder="MM" />
-      </div>
-
-      <div class="form__field">
-        <label for="year">Year</label>
-        <input id="year" type="number" placeholder="YYYY" />
-      </div>
-    </form>
 
     <section class="separator-section">
       <button id="calculate">
@@ -50,17 +55,18 @@
       </button>
       <div class="separator"></div>
     </section>
+  </form>
 
     <!-- Results section -->
     <section class="results">
       <div>
-        <span id="years" class="results__number">38</span> years
+        <span id="years" class="results__number">--</span> years
       </div>
       <div>
-        <span id="months" class="results__number">3</span> months
+        <span id="months" class="results__number">--</span> months
       </div>
       <div>
-        <span id="days" class="results__number">26</span> days
+        <span id="days" class="results__number">--</span> days
       </div>
     </section>
   </main>
