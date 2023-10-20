@@ -28,9 +28,10 @@ const getRelativeTime = (today, birthDate) => {
 }
 
 const displayNumbers = ({day, month, year}) => {
-    document.getElementById("days").innerHTML = day;
-    document.getElementById("months").innerHTML = month;
-    document.getElementById("years").innerHTML = year;
+    const options = { duration: 2 };  // Duration is in seconds
+    new countUp.CountUp('years', year, options).start();
+    new countUp.CountUp('months', month, options).start();
+    new countUp.CountUp('days', day, options).start();
 }
 
 // We load a function when the document is ready without jquery
